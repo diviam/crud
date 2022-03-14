@@ -17,7 +17,7 @@ export const Addedit = () => {
 
     const navigate = useNavigate();
 
-    const { id } = useParams();
+    const {id} = useParams();
 
     useEffect(() => {
         fireDb.child("contacts").on("value",(snapshot) => {
